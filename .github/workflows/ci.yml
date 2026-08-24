@@ -2,7 +2,7 @@
    on: [push]
    jobs:
      call-ci:
-       uses: kk-security/.github/.github/workflows/reusable-ci.yml@main
+       uses: kk-security-jpvardhan/.github/.github/workflows/reusable-ci.yml@main
        with:
          node-version: '20'
        secrets:
@@ -11,7 +11,7 @@
      test-composite-action:
        runs-on: [self-hosted, ubuntu-private]
        steps:
-         - uses: kk-security/lab-actions@main
+         - uses: kk-security-jpvardhan/lab-actions@main
            with:
              environment: 'staging'
 
