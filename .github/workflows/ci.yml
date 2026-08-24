@@ -7,10 +7,3 @@
          node-version: '20'
        secrets:
          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-     test-composite-action:
-       runs-on: [self-hosted]
-       steps:
-         - uses: kk-security-jpvardhan/lab-actions@main
-           with:
-             environment: 'staging'
