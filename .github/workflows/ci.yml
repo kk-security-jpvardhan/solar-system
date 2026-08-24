@@ -2,7 +2,7 @@
    on: [push]
    jobs:
      call-ci:
-       uses: kk-security-jpvardhan/.github/workflows/reusable-ci.yml@main
+       uses: kk-security-jpvardhan/.github/.github/workflows/reusable-ci.yml@main
        with:
          node-version: '20'
        secrets:
@@ -12,4 +12,4 @@
        steps:
          - uses: kk-security-jpvardhan/lab-actions@main
            with:
-             environment: 'staging'
+             environment: 'staging' 
